@@ -1,0 +1,33 @@
+
+<body>
+<h1>Quiz login</h1>
+
+{% if name == "Ismet" %}
+<h2>Welcome {{name}}</h2>
+{% else %}
+<h2>Welcome unknown user</h2>
+{% endif %}
+
+<div id="login_div">
+
+    <label>Username</label><br>
+    <input id="username" type="text" placeholder="Enter username here!" required><br>
+
+    <label for="pwd">Password</label><br>
+        <input id="pwd" type="password" placeholder="Enter password here!" required><br>
+        
+    <form method='GET' action='LoginBtn'>
+        <button type="submit"> Login! </input>
+    </form>
+
+</div>
+
+<br>
+
+<div id="logininfo" class="infotable">
+    <p id="infotext" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">Welcome to the login!</p>
+</div>
+<p>{{statement}}</p>
+ 
+</div>
+</body>

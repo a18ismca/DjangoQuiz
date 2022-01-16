@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import printOut
+from .views import printOut, print
+from . import views
 
 urlpatterns = [
-    path("", printOut, name="printOutHW"),
+    path("", printOut, name="printOut"),
+    path("", print, name="print"),
 ]
